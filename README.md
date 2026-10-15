@@ -242,8 +242,6 @@ results = await asyncio.gather(
 )
 ```
 
-This is similar to JavaScript's `Promise.all()`: independent agent calls are started concurrently and their results are collected. Unlike `Promise.all()`, this example uses `return_exceptions=True` so an individual agent exception can be reported alongside successful results.
-
 The orchestrator is ordinary Python code; a dedicated agent orchestration framework is not required for this initial workflow.
 
 ## Current limitations
